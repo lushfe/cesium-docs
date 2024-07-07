@@ -22,4 +22,8 @@ footer .rst-footer-buttons {
 }
 footer hr {
   display: none;
+}
+
+.admonition .admonition-title {
+  padding: 8px 12px;
 }/*# sourceMappingURL=index.css.map */

@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "\u5f00\u59cb";
+        var mkdocs_page_name = "\u6559\u7a0b\u7b80\u4ecb";
         var mkdocs_page_input_path = "index.md";
         var mkdocs_page_url = null;
       </script>
@@ -41,9 +41,13 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航栏">
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">开始</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">教程简介</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#_2">不规则地球</a>
+    <li class="toctree-l2"><a class="reference internal" href="#wgs84">WGS84 坐标系</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gcj02">GCJ02 坐标系</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bd09">BD09 坐标系</a>
     </li>
     </ul>
                 </li>
@@ -69,7 +73,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="." class="icon icon-home" aria-label="文档"></a></li>
-      <li class="breadcrumb-item active">开始</li>
+      <li class="breadcrumb-item active">教程简介</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -79,10 +83,17 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="_1">教程简介</h1>
-<p>本篇教程适合刚开始入门 Cesium 开发者，不需要具备图形相关知识，但需要具备 JS 编程能力。</p>
-<p>因为 Cesium 是一个 3D GIS 地图框架，所以会涉及一些 GIS 相关知识，所以在学习 Cesium 之前，你需要了解一下知识点：</p>
-<h2 id="_2">不规则地球</h2>
-<p>真实地球是一个表面凹凸不平的椭球体，</p>
+<p>本篇教程适合刚入门 Cesium 开发者，不需要具备图形相关知识，但需要具备 JS 编程能力。</p>
+<h2 id="wgs84">WGS84 坐标系</h2>
+<p>大地坐标系，也是目前广泛使用的 GPS 全球卫星定位系统使用的坐标系，坐标原点为地球质心，Cesium 默认采用此坐标系。谷歌地球使用此坐标系。</p>
+<h2 id="gcj02">GCJ02 坐标系</h2>
+<p>又称火星坐标系，是由中国国家测绘局制定的地理坐标系统，是由 WGS84 加密后得到的坐标系。国内高德地图使用此坐标系。</p>
+<h2 id="bd09">BD09 坐标系</h2>
+<p>百度坐标系，在 GCJ02 坐标系基础上再次加密。其中 bd09ll 表示百度经纬度坐标，bd09mc 表示百度墨卡托米制坐标。国内百度地图使用此坐标系。</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>出于国家安全考虑，互联网地图在国内必须至少使用 GCJ02 进行首次加密，不允许直接使用 WGS84 坐标下的地理数据。同时任何坐标系均不可转换为 WGS84 坐标。</p>
+</div>
               
             </div>
           </div><footer>
@@ -131,5 +142,5 @@
 
 <!--
 MkDocs version : 1.6.0
-Build Date UTC : 2024-07-07 03:05:21.079918+00:00
+Build Date UTC : 2024-07-07 04:45:25.922363+00:00
 -->

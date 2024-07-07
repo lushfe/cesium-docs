@@ -1,0 +1,30 @@
+site_name: Cesium 教程
+
+# 主题
+theme:
+  name: readthedocs
+  locale: zh_CN
+
+# 自定义css
+extra_css:
+  - css/index.css
+
+
+# 导航栏
+nav:
+  - 教程简介: index.md
+  - 入门教程:
+      - Installation: about/index.md
+      - Installation1: about/index1.md
+
+# 扩展
+markdown_extensions:
+  - admonition
+
+# 打包目录
+site_dir: dist
+
+formats:
+  - pdf
+  - epub
+  - mobi

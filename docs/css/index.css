@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+  .wy-nav-top {
+    position: relative;
+  }
+  .wy-nav-top i {
+    padding-top: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+}
+.wy-side-nav-search input[type=text] {
+  border-radius: 4px;
+}
+
+footer {
+  font-size: 0;
+}
+footer .rst-footer-buttons {
+  font-size: initial;
+}
+footer hr {
+  display: none;
+}
+
+.admonition .admonition-title {
+  padding: 8px 12px;
+}/*# sourceMappingURL=index.css.map */

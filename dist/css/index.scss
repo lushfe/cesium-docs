@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+  .wy-nav-top {
+    position: relative;
+    i {
+      padding-top: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20px;
+    }
+  }
+}
+
+.wy-side-nav-search input[type="text"] {
+  border-radius: 4px;
+}
+
+footer {
+  font-size: 0;
+
+  .rst-footer-buttons {
+    font-size: initial;
+  }
+
+  hr {
+    display: none;
+  }
+}
